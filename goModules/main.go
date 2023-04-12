@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"net/http"
+	
 
 	"github.com/julienschmidt/httprouter"
 	"go.uber.org/zap"
@@ -22,4 +23,6 @@ func Index(_ http.ResponseWriter, _ *http.Request, _ httprouter.Params) {
 	logger.Info("successfully performed http request")
 	logger.Info(quote.Hello())
 	logger.Info(quoteV3.HelloV3())
+
+	
 }
