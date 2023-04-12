@@ -21,5 +21,21 @@ println(users[0])
 var usersSlice []string
 usersSlice =append(usersSlice,"ken")
 usersSlice =append(usersSlice,"charles")
-fmt.Printf("users slice %v",usersSlice)
+fmt.Printf("users slice %v \n",usersSlice)
+//loops 
+//for loop
+for { // this is like a while loop 
+	var firstName string
+	for _, user :=range usersSlice{
+		fmt.Println( "user",user)
+	}
+	fmt.Println("enter your name")
+	fmt.Scan(&firstName)
+fmt.Println("hello",firstName)
+}
+//for loop
+
+
+
+
 }
